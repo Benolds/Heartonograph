@@ -14,6 +14,8 @@ Open the _Band Samples_ workspace in the _iOS App_ directory, and build the _Ban
 
 Tap _Start Heart Rate Sensor_ to begin collecting data and broadcasting it to the Host IP on port 3001. Broadcasts are made with an http protocol called Open Sound Control (OSC), using MetatoneOSC (https://github.com/cpmpercussion/MetatoneOSC)
 
+The phone and app should remain open to ensure the values continue to be sent.
+
 ### Step 3 - Mac OSX App
 
 Run the _Heartonograph Desktop Receiver_ Mac App in the _Mac OSX App_ directory. The _Path to heart rate data_ field may be changed if you want to save the data received from the iPhone in a different location.
