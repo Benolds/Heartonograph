@@ -4,29 +4,29 @@ A project by Sam Bishamber, Manuel Castro, Lucia Liu, Ben Reynolds, and Justin X
 
 ## How to Use
 
-1. Step 1 - Microsoft Band
+### Step 1 - Microsoft Band
 
 Wear a Microsoft Band, download the _Microsoft Health_ app on your iPhone, and bluetooth pair the band with your phone.
 
-2. Step 2 - iOS App
+### Step 2 - iOS App
 
 Open the _Band Samples_ workspace in the _iOS App_ directory, and build the _BandHeartRate_ target on your phone. Determine the IP address of your desktop computer (e.g. 18.189.11.222, can be located in the _Network_ page in Mac OSX System Preferences), and enter that value into the text field within the app.
 
 Tap _Start Heart Rate Sensor_ to begin collecting data and broadcasting it to the Host IP on port 3001.
 
-3. Step 3 - Mac OSX App
+### Step 3 - Mac OSX App
 
 Run the _Heartonograph Desktop Receiver_ Mac App in the _Mac OSX App_ directory. The _Path to heart rate data_ field may be changed if you want to save the data received from the iPhone in a different location.
 
 Your computer is now listening for heart rate data from the phone, and is saving the data in the designated .txt file.
 
-4. Step 4 - Arduino
+### Step 4 - Arduino
 
 Open the _Heartonograph.ino_ file with the Arduino editor. Plug in the Arduino for the Heartonograph via USB, and select its serial port in the Tools -> Port menu.
 
 Upload the program to your Arduino.
 
-5. Step 5 - Processing
+### Step 5 - Processing
 
 Open the _harmonograph_singlevalue_ file in the _Processing_ directory. This is a Java file in the Processing environment. Update the _filepath_ variable's value to match the .txt file designated in the _Heartonograph Desktop Receiver_ app.
 
