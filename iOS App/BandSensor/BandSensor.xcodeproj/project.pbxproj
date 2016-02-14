@@ -1,0 +1,1017 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DBF993B1C71166A00451B62 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF991D1C71166A00451B62 /* F53OSCBundle.m */; };
+		5DBF993C1C71166A00451B62 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF991F1C71166A00451B62 /* F53OSCClient.m */; };
+		5DBF993D1C71166A00451B62 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF99221C71166A00451B62 /* F53OSCMessage.m */; };
+		5DBF993E1C71166A00451B62 /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF99241C71166A00451B62 /* F53OSCPacket.m */; };
+		5DBF993F1C71166A00451B62 /* F53OSCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF99261C71166A00451B62 /* F53OSCParser.m */; };
+		5DBF99401C71166A00451B62 /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF99291C71166A00451B62 /* F53OSCServer.m */; };
+		5DBF99411C71166A00451B62 /* F53OSCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF992B1C71166A00451B62 /* F53OSCSocket.m */; };
+		5DBF99421C71166A00451B62 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF992D1C71166A00451B62 /* F53OSCTimeTag.m */; };
+		5DBF99431C71166A00451B62 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF992F1C71166A00451B62 /* GCDAsyncSocket.m */; };
+		5DBF99441C71166A00451B62 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF99311C71166A00451B62 /* GCDAsyncUdpSocket.m */; };
+		5DBF99451C71166A00451B62 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF99331C71166A00451B62 /* NSData+F53OSCBlob.m */; };
+		5DBF99461C71166A00451B62 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF99351C71166A00451B62 /* NSDate+F53OSCTimeTag.m */; };
+		5DBF99471C71166A00451B62 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF99371C71166A00451B62 /* NSNumber+F53OSCNumber.m */; };
+		5DBF99481C71166A00451B62 /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF99391C71166A00451B62 /* NSString+F53OSCString.m */; };
+		5DBF99491C71166A00451B62 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF993A1C71166A00451B62 /* README.markdown */; };
+		E50151811B98DD0F00B91738 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E50151801B98DD0F00B91738 /* main.m */; };
+		E50151841B98DD1000B91738 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E50151831B98DD1000B91738 /* AppDelegate.m */; };
+		E50151871B98DD1000B91738 /* HeartRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50151861B98DD1000B91738 /* HeartRateViewController.m */; };
+		E501518A1B98DD1000B91738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50151881B98DD1000B91738 /* Main.storyboard */; };
+		E501518C1B98DD1000B91738 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E501518B1B98DD1000B91738 /* Images.xcassets */; };
+		E501518F1B98DD1000B91738 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E501518D1B98DD1000B91738 /* LaunchScreen.xib */; };
+		E50151A21B98DD9C00B91738 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E721AA636600071C70E /* CoreBluetooth.framework */; };
+		E50151A31B98DDA500B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */; };
+		E50151CE1B98E79200B91738 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E721AA636600071C70E /* CoreBluetooth.framework */; };
+		E50151CF1B98E79500B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */; };
+		E501523F1B9A385D00B91738 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E721AA636600071C70E /* CoreBluetooth.framework */; };
+		E501526A1B9A3E0400B91738 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E721AA636600071C70E /* CoreBluetooth.framework */; };
+		E501526B1B9A3E0600B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */; };
+		E50152C01B9A416200B91738 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E721AA636600071C70E /* CoreBluetooth.framework */; };
+		E50152C11B9A416400B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */; };
+		E50152C21B9A416800B91738 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E721AA636600071C70E /* CoreBluetooth.framework */; };
+		E50152C31B9A416A00B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */; };
+		E5D0C1FF1BA22D3A00C27E50 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */; };
+		E5D0C2001BA22DB200C27E50 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E721AA636600071C70E /* CoreBluetooth.framework */; };
+		E5D0C2011BA22DD400C27E50 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DBF991B1C71166A00451B62 /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSC.h; path = MetatoneOSC/F53OSC.h; sourceTree = "<group>"; };
+		5DBF991C1C71166A00451B62 /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCBundle.h; path = MetatoneOSC/F53OSCBundle.h; sourceTree = "<group>"; };
+		5DBF991D1C71166A00451B62 /* F53OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCBundle.m; path = MetatoneOSC/F53OSCBundle.m; sourceTree = "<group>"; };
+		5DBF991E1C71166A00451B62 /* F53OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCClient.h; path = MetatoneOSC/F53OSCClient.h; sourceTree = "<group>"; };
+		5DBF991F1C71166A00451B62 /* F53OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCClient.m; path = MetatoneOSC/F53OSCClient.m; sourceTree = "<group>"; };
+		5DBF99201C71166A00451B62 /* F53OSCFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCFoundationAdditions.h; path = MetatoneOSC/F53OSCFoundationAdditions.h; sourceTree = "<group>"; };
+		5DBF99211C71166A00451B62 /* F53OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCMessage.h; path = MetatoneOSC/F53OSCMessage.h; sourceTree = "<group>"; };
+		5DBF99221C71166A00451B62 /* F53OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCMessage.m; path = MetatoneOSC/F53OSCMessage.m; sourceTree = "<group>"; };
+		5DBF99231C71166A00451B62 /* F53OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCPacket.h; path = MetatoneOSC/F53OSCPacket.h; sourceTree = "<group>"; };
+		5DBF99241C71166A00451B62 /* F53OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCPacket.m; path = MetatoneOSC/F53OSCPacket.m; sourceTree = "<group>"; };
+		5DBF99251C71166A00451B62 /* F53OSCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCParser.h; path = MetatoneOSC/F53OSCParser.h; sourceTree = "<group>"; };
+		5DBF99261C71166A00451B62 /* F53OSCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCParser.m; path = MetatoneOSC/F53OSCParser.m; sourceTree = "<group>"; };
+		5DBF99271C71166A00451B62 /* F53OSCProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCProtocols.h; path = MetatoneOSC/F53OSCProtocols.h; sourceTree = "<group>"; };
+		5DBF99281C71166A00451B62 /* F53OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCServer.h; path = MetatoneOSC/F53OSCServer.h; sourceTree = "<group>"; };
+		5DBF99291C71166A00451B62 /* F53OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCServer.m; path = MetatoneOSC/F53OSCServer.m; sourceTree = "<group>"; };
+		5DBF992A1C71166A00451B62 /* F53OSCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCSocket.h; path = MetatoneOSC/F53OSCSocket.h; sourceTree = "<group>"; };
+		5DBF992B1C71166A00451B62 /* F53OSCSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCSocket.m; path = MetatoneOSC/F53OSCSocket.m; sourceTree = "<group>"; };
+		5DBF992C1C71166A00451B62 /* F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCTimeTag.h; path = MetatoneOSC/F53OSCTimeTag.h; sourceTree = "<group>"; };
+		5DBF992D1C71166A00451B62 /* F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCTimeTag.m; path = MetatoneOSC/F53OSCTimeTag.m; sourceTree = "<group>"; };
+		5DBF992E1C71166A00451B62 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = MetatoneOSC/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		5DBF992F1C71166A00451B62 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = MetatoneOSC/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		5DBF99301C71166A00451B62 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = MetatoneOSC/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		5DBF99311C71166A00451B62 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = MetatoneOSC/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		5DBF99321C71166A00451B62 /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+F53OSCBlob.h"; path = "MetatoneOSC/NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
+		5DBF99331C71166A00451B62 /* NSData+F53OSCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+F53OSCBlob.m"; path = "MetatoneOSC/NSData+F53OSCBlob.m"; sourceTree = "<group>"; };
+		5DBF99341C71166A00451B62 /* NSDate+F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+F53OSCTimeTag.h"; path = "MetatoneOSC/NSDate+F53OSCTimeTag.h"; sourceTree = "<group>"; };
+		5DBF99351C71166A00451B62 /* NSDate+F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+F53OSCTimeTag.m"; path = "MetatoneOSC/NSDate+F53OSCTimeTag.m"; sourceTree = "<group>"; };
+		5DBF99361C71166A00451B62 /* NSNumber+F53OSCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+F53OSCNumber.h"; path = "MetatoneOSC/NSNumber+F53OSCNumber.h"; sourceTree = "<group>"; };
+		5DBF99371C71166A00451B62 /* NSNumber+F53OSCNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+F53OSCNumber.m"; path = "MetatoneOSC/NSNumber+F53OSCNumber.m"; sourceTree = "<group>"; };
+		5DBF99381C71166A00451B62 /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+F53OSCString.h"; path = "MetatoneOSC/NSString+F53OSCString.h"; sourceTree = "<group>"; };
+		5DBF99391C71166A00451B62 /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+F53OSCString.m"; path = "MetatoneOSC/NSString+F53OSCString.m"; sourceTree = "<group>"; };
+		5DBF993A1C71166A00451B62 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.markdown; path = MetatoneOSC/README.markdown; sourceTree = "<group>"; };
+		5F598E721AA636600071C70E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftBandKit_iOS.framework; path = ../MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		E501517C1B98DD0F00B91738 /* BandHeartRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandHeartRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E501517F1B98DD0F00B91738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E50151801B98DD0F00B91738 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E50151821B98DD1000B91738 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E50151831B98DD1000B91738 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E50151851B98DD1000B91738 /* HeartRateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeartRateViewController.h; sourceTree = "<group>"; };
+		E50151861B98DD1000B91738 /* HeartRateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartRateViewController.m; sourceTree = "<group>"; };
+		E50151891B98DD1000B91738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E501518B1B98DD1000B91738 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E501518E1B98DD1000B91738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E50151A81B98E67100B91738 /* BandGSR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandGSR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50151D41B98F6A300B91738 /* BandAccelerometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandAccelerometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50152181B9A348B00B91738 /* BandBarometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandBarometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50152441B9A3D7000B91738 /* BandAmbientLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandAmbientLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50152701B9A413000B91738 /* BandAltimeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandAltimeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E501529A1B9A415000B91738 /* BandRRInterval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandRRInterval.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E50151791B98DD0F00B91738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50151A21B98DD9C00B91738 /* CoreBluetooth.framework in Frameworks */,
+				E50151A31B98DDA500B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50151A51B98E67100B91738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50151CE1B98E79200B91738 /* CoreBluetooth.framework in Frameworks */,
+				E50151CF1B98E79500B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50151D11B98F6A300B91738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D0C2001BA22DB200C27E50 /* CoreBluetooth.framework in Frameworks */,
+				E5D0C2011BA22DD400C27E50 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50152151B9A348B00B91738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E501523F1B9A385D00B91738 /* CoreBluetooth.framework in Frameworks */,
+				E5D0C1FF1BA22D3A00C27E50 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50152411B9A3D7000B91738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E501526A1B9A3E0400B91738 /* CoreBluetooth.framework in Frameworks */,
+				E501526B1B9A3E0600B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E501526D1B9A413000B91738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50152C21B9A416800B91738 /* CoreBluetooth.framework in Frameworks */,
+				E50152C31B9A416A00B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50152971B9A415000B91738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50152C01B9A416200B91738 /* CoreBluetooth.framework in Frameworks */,
+				E50152C11B9A416400B91738 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DBF98431C6FB76D00451B62 /* MetatoneOSC */ = {
+			isa = PBXGroup;
+			children = (
+				5DBF991B1C71166A00451B62 /* F53OSC.h */,
+				5DBF991C1C71166A00451B62 /* F53OSCBundle.h */,
+				5DBF991D1C71166A00451B62 /* F53OSCBundle.m */,
+				5DBF991E1C71166A00451B62 /* F53OSCClient.h */,
+				5DBF991F1C71166A00451B62 /* F53OSCClient.m */,
+				5DBF99201C71166A00451B62 /* F53OSCFoundationAdditions.h */,
+				5DBF99211C71166A00451B62 /* F53OSCMessage.h */,
+				5DBF99221C71166A00451B62 /* F53OSCMessage.m */,
+				5DBF99231C71166A00451B62 /* F53OSCPacket.h */,
+				5DBF99241C71166A00451B62 /* F53OSCPacket.m */,
+				5DBF99251C71166A00451B62 /* F53OSCParser.h */,
+				5DBF99261C71166A00451B62 /* F53OSCParser.m */,
+				5DBF99271C71166A00451B62 /* F53OSCProtocols.h */,
+				5DBF99281C71166A00451B62 /* F53OSCServer.h */,
+				5DBF99291C71166A00451B62 /* F53OSCServer.m */,
+				5DBF992A1C71166A00451B62 /* F53OSCSocket.h */,
+				5DBF992B1C71166A00451B62 /* F53OSCSocket.m */,
+				5DBF992C1C71166A00451B62 /* F53OSCTimeTag.h */,
+				5DBF992D1C71166A00451B62 /* F53OSCTimeTag.m */,
+				5DBF992E1C71166A00451B62 /* GCDAsyncSocket.h */,
+				5DBF992F1C71166A00451B62 /* GCDAsyncSocket.m */,
+				5DBF99301C71166A00451B62 /* GCDAsyncUdpSocket.h */,
+				5DBF99311C71166A00451B62 /* GCDAsyncUdpSocket.m */,
+				5DBF99321C71166A00451B62 /* NSData+F53OSCBlob.h */,
+				5DBF99331C71166A00451B62 /* NSData+F53OSCBlob.m */,
+				5DBF99341C71166A00451B62 /* NSDate+F53OSCTimeTag.h */,
+				5DBF99351C71166A00451B62 /* NSDate+F53OSCTimeTag.m */,
+				5DBF99361C71166A00451B62 /* NSNumber+F53OSCNumber.h */,
+				5DBF99371C71166A00451B62 /* NSNumber+F53OSCNumber.m */,
+				5DBF99381C71166A00451B62 /* NSString+F53OSCString.h */,
+				5DBF99391C71166A00451B62 /* NSString+F53OSCString.m */,
+				5DBF993A1C71166A00451B62 /* README.markdown */,
+			);
+			name = MetatoneOSC;
+			sourceTree = "<group>";
+		};
+		5F598E401AA635E80071C70E = {
+			isa = PBXGroup;
+			children = (
+				5F598E761AA6368C0071C70E /* Framework */,
+				E501517D1B98DD0F00B91738 /* BandHeartRate */,
+				5F598E4A1AA635E80071C70E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F598E4A1AA635E80071C70E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E501517C1B98DD0F00B91738 /* BandHeartRate.app */,
+				E50151A81B98E67100B91738 /* BandGSR.app */,
+				E50151D41B98F6A300B91738 /* BandAccelerometer.app */,
+				E50152181B9A348B00B91738 /* BandBarometer.app */,
+				E50152441B9A3D7000B91738 /* BandAmbientLight.app */,
+				E50152701B9A413000B91738 /* BandAltimeter.app */,
+				E501529A1B9A415000B91738 /* BandRRInterval.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F598E761AA6368C0071C70E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */,
+				5F598E721AA636600071C70E /* CoreBluetooth.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		E501517D1B98DD0F00B91738 /* BandHeartRate */ = {
+			isa = PBXGroup;
+			children = (
+				5DBF98431C6FB76D00451B62 /* MetatoneOSC */,
+				E50151821B98DD1000B91738 /* AppDelegate.h */,
+				E50151831B98DD1000B91738 /* AppDelegate.m */,
+				E50151851B98DD1000B91738 /* HeartRateViewController.h */,
+				E50151861B98DD1000B91738 /* HeartRateViewController.m */,
+				E50151881B98DD1000B91738 /* Main.storyboard */,
+				E501518B1B98DD1000B91738 /* Images.xcassets */,
+				E501518D1B98DD1000B91738 /* LaunchScreen.xib */,
+				E501517E1B98DD0F00B91738 /* Supporting Files */,
+			);
+			path = BandHeartRate;
+			sourceTree = "<group>";
+		};
+		E501517E1B98DD0F00B91738 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E501517F1B98DD0F00B91738 /* Info.plist */,
+				E50151801B98DD0F00B91738 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E501517B1B98DD0F00B91738 /* BandHeartRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E501519C1B98DD1000B91738 /* Build configuration list for PBXNativeTarget "BandHeartRate" */;
+			buildPhases = (
+				E50151781B98DD0F00B91738 /* Sources */,
+				E50151791B98DD0F00B91738 /* Frameworks */,
+				E501517A1B98DD0F00B91738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandHeartRate;
+			productName = BandHeartRate;
+			productReference = E501517C1B98DD0F00B91738 /* BandHeartRate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E50151A71B98E67100B91738 /* BandGSR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50151C81B98E67100B91738 /* Build configuration list for PBXNativeTarget "BandGSR" */;
+			buildPhases = (
+				E50151A41B98E67100B91738 /* Sources */,
+				E50151A51B98E67100B91738 /* Frameworks */,
+				E50151A61B98E67100B91738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandGSR;
+			productName = BandGSR;
+			productReference = E50151A81B98E67100B91738 /* BandGSR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E50151D31B98F6A300B91738 /* BandAccelerometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50151F41B98F6A300B91738 /* Build configuration list for PBXNativeTarget "BandAccelerometer" */;
+			buildPhases = (
+				E50151D01B98F6A300B91738 /* Sources */,
+				E50151D11B98F6A300B91738 /* Frameworks */,
+				E50151D21B98F6A300B91738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandAccelerometer;
+			productName = BandAccelerometer;
+			productReference = E50151D41B98F6A300B91738 /* BandAccelerometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E50152171B9A348B00B91738 /* BandBarometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E501523C1B9A348B00B91738 /* Build configuration list for PBXNativeTarget "BandBarometer" */;
+			buildPhases = (
+				E50152141B9A348B00B91738 /* Sources */,
+				E50152151B9A348B00B91738 /* Frameworks */,
+				E50152161B9A348B00B91738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandBarometer;
+			productName = BandBarometer;
+			productReference = E50152181B9A348B00B91738 /* BandBarometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E50152431B9A3D7000B91738 /* BandAmbientLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50152641B9A3D7000B91738 /* Build configuration list for PBXNativeTarget "BandAmbientLight" */;
+			buildPhases = (
+				E50152401B9A3D7000B91738 /* Sources */,
+				E50152411B9A3D7000B91738 /* Frameworks */,
+				E50152421B9A3D7000B91738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandAmbientLight;
+			productName = BandAmbientLight;
+			productReference = E50152441B9A3D7000B91738 /* BandAmbientLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E501526F1B9A413000B91738 /* BandAltimeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50152901B9A413000B91738 /* Build configuration list for PBXNativeTarget "BandAltimeter" */;
+			buildPhases = (
+				E501526C1B9A413000B91738 /* Sources */,
+				E501526D1B9A413000B91738 /* Frameworks */,
+				E501526E1B9A413000B91738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandAltimeter;
+			productName = BandAltimeter;
+			productReference = E50152701B9A413000B91738 /* BandAltimeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E50152991B9A415000B91738 /* BandRRInterval */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50152BA1B9A415000B91738 /* Build configuration list for PBXNativeTarget "BandRRInterval" */;
+			buildPhases = (
+				E50152961B9A415000B91738 /* Sources */,
+				E50152971B9A415000B91738 /* Frameworks */,
+				E50152981B9A415000B91738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandRRInterval;
+			productName = BandRRInterval;
+			productReference = E501529A1B9A415000B91738 /* BandRRInterval.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F598E411AA635E80071C70E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Microsoft;
+				TargetAttributes = {
+					E501517B1B98DD0F00B91738 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E50151A71B98E67100B91738 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E50151D31B98F6A300B91738 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E50152171B9A348B00B91738 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E50152431B9A3D7000B91738 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E501526F1B9A413000B91738 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E50152991B9A415000B91738 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 5F598E441AA635E80071C70E /* Build configuration list for PBXProject "BandSensor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F598E401AA635E80071C70E;
+			productRefGroup = 5F598E4A1AA635E80071C70E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E50151D31B98F6A300B91738 /* BandAccelerometer */,
+				E501526F1B9A413000B91738 /* BandAltimeter */,
+				E50152431B9A3D7000B91738 /* BandAmbientLight */,
+				E50152171B9A348B00B91738 /* BandBarometer */,
+				E50151A71B98E67100B91738 /* BandGSR */,
+				E501517B1B98DD0F00B91738 /* BandHeartRate */,
+				E50152991B9A415000B91738 /* BandRRInterval */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E501517A1B98DD0F00B91738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E501518A1B98DD1000B91738 /* Main.storyboard in Resources */,
+				E501518F1B98DD1000B91738 /* LaunchScreen.xib in Resources */,
+				E501518C1B98DD1000B91738 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50151A61B98E67100B91738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50151D21B98F6A300B91738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50152161B9A348B00B91738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50152421B9A3D7000B91738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E501526E1B9A413000B91738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50152981B9A415000B91738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E50151781B98DD0F00B91738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DBF99431C71166A00451B62 /* GCDAsyncSocket.m in Sources */,
+				5DBF99421C71166A00451B62 /* F53OSCTimeTag.m in Sources */,
+				5DBF993E1C71166A00451B62 /* F53OSCPacket.m in Sources */,
+				5DBF99471C71166A00451B62 /* NSNumber+F53OSCNumber.m in Sources */,
+				5DBF99411C71166A00451B62 /* F53OSCSocket.m in Sources */,
+				5DBF99481C71166A00451B62 /* NSString+F53OSCString.m in Sources */,
+				5DBF99401C71166A00451B62 /* F53OSCServer.m in Sources */,
+				5DBF993F1C71166A00451B62 /* F53OSCParser.m in Sources */,
+				E50151871B98DD1000B91738 /* HeartRateViewController.m in Sources */,
+				E50151841B98DD1000B91738 /* AppDelegate.m in Sources */,
+				5DBF99461C71166A00451B62 /* NSDate+F53OSCTimeTag.m in Sources */,
+				5DBF993B1C71166A00451B62 /* F53OSCBundle.m in Sources */,
+				5DBF993C1C71166A00451B62 /* F53OSCClient.m in Sources */,
+				5DBF993D1C71166A00451B62 /* F53OSCMessage.m in Sources */,
+				5DBF99491C71166A00451B62 /* README.markdown in Sources */,
+				5DBF99441C71166A00451B62 /* GCDAsyncUdpSocket.m in Sources */,
+				5DBF99451C71166A00451B62 /* NSData+F53OSCBlob.m in Sources */,
+				E50151811B98DD0F00B91738 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50151A41B98E67100B91738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50151D01B98F6A300B91738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50152141B9A348B00B91738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50152401B9A3D7000B91738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E501526C1B9A413000B91738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50152961B9A415000B91738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E50151881B98DD1000B91738 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E50151891B98DD1000B91738 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E501518D1B98DD1000B91738 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E501518E1B98DD1000B91738 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F598E6A1AA635E90071C70E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5F598E6B1AA635E90071C70E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E501519D1B98DD1000B91738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BandHeartRate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E501519E1B98DD1000B91738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BandHeartRate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E50151C91B98E67100B91738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BandGSR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E50151CA1B98E67100B91738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BandGSR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E50151F51B98F6A300B91738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BandAccelerometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E50151F61B98F6A300B91738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BandAccelerometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E50152381B9A348B00B91738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BandBarometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E50152391B9A348B00B91738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BandBarometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E50152651B9A3D7000B91738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BandAmbientLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E50152661B9A3D7000B91738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BandAmbientLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E50152911B9A413000B91738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BandAltimeter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E50152921B9A413000B91738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BandAltimeter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E50152BB1B9A415000B91738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BandRRInterval/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E50152BC1B9A415000B91738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BandRRInterval/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F598E441AA635E80071C70E /* Build configuration list for PBXProject "BandSensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F598E6A1AA635E90071C70E /* Debug */,
+				5F598E6B1AA635E90071C70E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E501519C1B98DD1000B91738 /* Build configuration list for PBXNativeTarget "BandHeartRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E501519D1B98DD1000B91738 /* Debug */,
+				E501519E1B98DD1000B91738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50151C81B98E67100B91738 /* Build configuration list for PBXNativeTarget "BandGSR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50151C91B98E67100B91738 /* Debug */,
+				E50151CA1B98E67100B91738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50151F41B98F6A300B91738 /* Build configuration list for PBXNativeTarget "BandAccelerometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50151F51B98F6A300B91738 /* Debug */,
+				E50151F61B98F6A300B91738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E501523C1B9A348B00B91738 /* Build configuration list for PBXNativeTarget "BandBarometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50152381B9A348B00B91738 /* Debug */,
+				E50152391B9A348B00B91738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50152641B9A3D7000B91738 /* Build configuration list for PBXNativeTarget "BandAmbientLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50152651B9A3D7000B91738 /* Debug */,
+				E50152661B9A3D7000B91738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50152901B9A413000B91738 /* Build configuration list for PBXNativeTarget "BandAltimeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50152911B9A413000B91738 /* Debug */,
+				E50152921B9A413000B91738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50152BA1B9A415000B91738 /* Build configuration list for PBXNativeTarget "BandRRInterval" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50152BB1B9A415000B91738 /* Debug */,
+				E50152BC1B9A415000B91738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F598E411AA635E80071C70E /* Project object */;
+}

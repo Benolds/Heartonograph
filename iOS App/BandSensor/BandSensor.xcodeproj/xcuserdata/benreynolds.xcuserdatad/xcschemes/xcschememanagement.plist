@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>BandHeartRate.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E501517B1B98DD0F00B91738</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E50151A71B98E67100B91738</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E50151D31B98F6A300B91738</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E50152171B9A348B00B91738</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E50152431B9A3D7000B91738</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E501526F1B9A413000B91738</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E50152991B9A415000B91738</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
